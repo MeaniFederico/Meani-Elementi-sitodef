@@ -179,12 +179,28 @@ function scendephoto() {
 
    $("#sottophoto").removeClass("piattophoto");
    $("#sottophoto").addClass("apertophoto");
+   $("#photo1").removeClass("invisibile");
+   $("#photo1").addClass("visibile");
+   $("#photo2").removeClass("invisibile");
+   $("#photo2").addClass("visibile");
+   $("#photo3").removeClass("invisibile");
+   $("#photo3").addClass("visibile");
+   $("#photo4").removeClass("invisibile");
+   $("#photo4").addClass("visibile");
 }
 
 function salephoto() {
 
    $("#sottophoto").removeClass("apertophoto");
    $("#sottophoto").addClass("piattophoto");
+   $("#photo1").removeClass("visibile");
+   $("#photo1").addClass("invisibile");
+   $("#photo2").removeClass("visibile");
+   $("#photo2").addClass("invisibile");
+   $("#photo3").removeClass("visibile");
+   $("#photo3").addClass("invisibile");
+   $("#photo4").removeClass("visibile");
+   $("#photo4").addClass("invisibile");
 }
 
 
@@ -193,6 +209,11 @@ function tendinaphoto() {
 
 	if($("#sottophoto").hasClass("piattophoto")) {
 		scendephoto();
+	}	
+	else if($("#sottophoto").hasClass("apertophoto")) {
+     
+		salephoto();
+		
 	}
 	
 	
@@ -202,17 +223,8 @@ function tendinaphoto() {
 $("#photo").on("mouseover", tendinaphoto);
 
 
-function chiusuratendinaphoto() { 
 
-	if($("#sottophoto").hasClass("apertophoto")) {
-     
-		salephoto();
-	}
-	
-	
-}
 
-$("#sottophoto").on("mouseout", chiusuratendinaphoto);
 
 
 

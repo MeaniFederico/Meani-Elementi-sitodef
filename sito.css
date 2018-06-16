@@ -5,59 +5,138 @@ body {
     overflow-x: hidden;
 }
 
-#barralato{
-    background-color: white;
-    width: 40px;
-    height: 100vh;
-}
+
 
 p{ 
     font-style: italic;
-    margin-right: 8%;
+    
     margin-top: 10%;
+    margin-bottom: 5px;
     text-align: right;
-    color: white;
-    font-size: 20px;
+    color: grey;
+    font-size: 15px;
 
 }
 
 h2{ 
-    margin-right: 7%;
+    
     margin-top: -2%;
     text-align: right;
-    color: white;
-    font-size: 30px;
+    color: grey;
+    font-size: 20px;
 
+}
+
+#contenitorescorre {
+
+    width:100vw;
+    height:100vh;
+    
+    position: absolute;
+    
+    
 }
 
 #mamma{
-    float: left;
+    position: absolute;
     font-style: italic;
     width: 30%;
-    left: 95%;
-    margin-top: 0px;
+    right: 5vw;
+    bottom: 8vh;
     text-align: right;
-    color: white;
-    font-size: 2vw;
+    
 }
 
-#nome {
+.scrittabianca{
+    color: white;
+}
+
+#disegnoecolophon{
+
+    position: absolute;
+    float: right;
+    width: 305px;
+    height: 233px;
+    right:71vw;
+    bottom:8vh;
+    
+}
+
+
+#immagine {
+    position: absolute;
+    width: 66px;
+    height: 100px;
+    
+    
+}
+
+#disegno {
+
+    width:66px;
+    height:100px;
+    position: absolute;
+    margin-left: 250px;  
+}
+#colophon{
+    position: absolute;
+    text-align: right;
+    color: white;
     float: left;
-    height: 100%;
-    width: 70%;
+    bottom: 72px;
+    right: 0;
+
+}
+
+.titolo{
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.dida{
+    font-size: 20px;
+    margin-right: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: white;
+}
+.descrizione{
+    font-size: 10px;
+    margin-right: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    color: white;
+}
+
+
+
+#nome {
+    position:absolute;
+    left: 30vw;
+    float: right; 
+    height: 275px;
+    width: 500px;
+    bottom: 5vh;
 }
 
 
 #fm{
+
     margin: 0px;
     text-align: left;
     color: white;
-    font-size: 130px;
+    font-size: 125px;
+    height: 110px;
+    
 }
 
 #contenitoreintro{
     height: 85%;
-    margin-left: 30vw;
+    margin-left: 31vw;
     margin-right: 3vw;
     margin-top: 3vw;
     margin-bottom: 3vw;
@@ -73,8 +152,8 @@ h2{
     margin-top: 0;
     margin-bottom: 0;
     text-align: left;
-    color: white;
-    font-size: 20px;
+    color: grey;
+    font-size: 14px;
 }
 
 #barra {
@@ -93,19 +172,24 @@ h2{
     text-align: center;
     width:10vw;
     height:20px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #2789ff;
     position: absolute;
     left: 25%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
+#home:hover{
+    font-size: 12px    
+    }
+
 .apertohome{
-    transition: 1s;
+    
+    transition: 0.5s;
     width: 10vw;
-    height: 30vW;
+    height: 30vh;
     background-color: white;
-    border: 1px solid red;
+    border: 1px solid #2789ff;
     position: absolute;
     left: 25%;
     top: 75%;
@@ -114,10 +198,11 @@ h2{
 }
 
 .piattohome{
-    transition: 1s;
+    transition: 0.5s;
+    transition-delay: 0.5s;
     width: 10vw;
-    height: 0vW;
-    background-color: red;
+    height: 0vh;
+    background-color: #2789ff;
     position: absolute;
     left: 25%;
     top: 75%;
@@ -131,19 +216,23 @@ h2{
     text-align: center;
     width:10vw;
     height:20px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #2789ff;
     position: absolute;
     left: 50%;
     top: 50%;  
     transform: translate(-50%, -50%);    
 }
 
+#photo:hover{
+    font-size: 12px    
+    }
+
 .apertophoto{
-    transition: 1s;
+    transition: 0.5s;
     width: 10vw;
-    height: 30vW;
+    height: 20vh;
     background-color: white;
-    border: 1px solid red;
+    border: 1px solid #2789ff;
     position: absolute;
     left: 50%;
     top: 75%;
@@ -152,22 +241,95 @@ h2{
 }
 
 .piattophoto{
-    transition: 1s;
+    transition: 0.5s;
+    transition-delay: 0.5s;
     width: 10vw;
-    height: 0vW;
-    background-color: red;
+    height: 0vh;
+    background-color: #2789ff;
     position: absolute;
     left: 50%;
     top: 75%;
     transform: translate(-50%, 0%);
 
 }
+#photo1{
+    position: absolute;
+    width: 10vw;
+    height: 5vh;
+    
+    left:50%;
+    top:0;
+    transform: translate(-50%, 0%);
+
+}
+
+#photo2{
+    position: absolute;
+    width: 10vw;
+    height: 5vh;
+    
+    left:50%;
+    top:5vh;
+    transform: translate(-50%, 0%);
+
+}
+
+#photo3{
+    position: absolute;
+    width: 10vw;
+    height: 5vh;
+    
+    left:50%;
+    top:10vh;
+    transform: translate(-50%, 0%);
+
+}
+
+#photo4{
+    position: absolute;
+    width: 10vw;
+    height: 5vh;
+    
+    left:50%;
+    top:15vh;
+    transform: translate(-50%, 0%);
+
+}
+
+.scrittatendina{
+    margin: 0;
+    color: grey;
+    font-weight: normal;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.scrittatendina:hover{
+    font-size: 12px    
+    }
+
+.invisibile{
+    transition:0.5s;
+    opacity: 0;
+}
+
+.visibile{
+    transition:0.5s;
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+
 
 #contact {
     text-align: center;
     width:10vw;
     height:20px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #2789ff;
     position: absolute;
     left: 75%;
     top: 50%;
@@ -176,12 +338,16 @@ h2{
     
 }
 
+#contact:hover{
+    font-size: 12px    
+    }
+
 .apertocontact{
-    transition: 1s;
+    transition: 0.5s;
     width: 10vw;
-    height: 30vW;
+    height: 30vh;
     background-color: white;
-    border: 1px solid red;
+    border: 1px solid #2789ff;
     position: absolute;
     left: 75%;
     top: 75%;
@@ -190,10 +356,11 @@ h2{
 }
 
 .piattocontact{
-    transition: 1s;
+    transition: 0.5s;
+    transition-delay: 0.5s;
     width: 10vw;
-    height: 0vW;
-    background-color: red;
+    height: 0vh;
+    background-color: #2789ff;
     position: absolute;
     left: 75%;
     top: 75%;
@@ -207,38 +374,20 @@ h2{
 
 
 
-#instagram {
-
-   width: 19px; 
-    height: 19px; 
-    position: fixed;
-    top: 50%;
-    left: 2.5vw;
-    transform: translate(-50%, -50%);
-
-    
-}
 
 
 
-#contenitorescorre {
 
-	width:95vw;
-	height:300px;
-	background: #b6c7d1;
-	position: absolute;
-	top: 5vh;
-	left: 5vw;
-}
+
 
 #contenitorefoto {
 
-    width:95vw;
+    width:100vw;
     height:700px;
-    background:blue;
+    background:white;
     position: absolute;
     top:1000px;
-    left: 5vw;
+    
 }
 
    #destra {
@@ -255,7 +404,7 @@ h2{
     }
 
     #sinistra {
-
+    
     color: #858784;
     cursor: pointer;
     width:50px;
@@ -273,6 +422,10 @@ h2{
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 50px
+    }
+
+    .centriamo:hover{
+    font-size: 55px    
     }
 
     #interessi{
@@ -298,16 +451,18 @@ h2{
 
 
     .sivede{
-
+        transition: 1s;
+        opacity: 1;
         width: 1400px;
         height: 1052px;
 
     }
 
     .nonsivede{
-
-        width: 0vw;
-        height: 0vw;
+        transition: 1s;
+        opacity: 0;
+        width: 0px;
+        height: 0px;
     }
 
     #david{
@@ -321,61 +476,53 @@ h2{
     #camping{
         margin-top: -20%;
     }
+
+    #interessi{
+        color: white;
+        position: absolute;
+        left: 5vw
+    }
    
 
 #contenitorecit {
 
-    width:95vw;
+    width:100vw;
     height:700px;
     background:blue;
     position: absolute;
     top:1700px;
-    left: 5vw;
+    
 }
 
 
 
 #sfondofoto {
 
-    width:95vw;
+    width:100vw;
     height:100vh;
     background:grey;
     position: fixed;
     
-    left: 5vw;
     
 
     
 }
 #fotosfondo {
 
-    width:95vw;
-    height:144vw;
+    width:100vw;
+    height:152vw;
     position: fixed;
-    left: 5%;
-    top: 40%;
+    
+    top: 30%;
     transform: translate(0%, -50%);
 
     
 }
 
-#disegno {
-
-    width:150px;
-    height:225px;
-    position: absolute;
-    left: 25%;
-    top: 50%;
-    transform: translate(-50%, -50%);   
-}
 
 
-#immagine {
-   
-    float: left;
-    width: 15%;
-    height: 100%;
-}
+
+
 
 
 #cit {
@@ -386,21 +533,23 @@ h2{
 }
 
 #nonnatina{
-    margin-top: 8%; 
+    bottom:8vh; 
+    right: 71vw;
     float: left;
-    transform: rotate(-90deg);
+    position: absolute;
+
 
    
 }
 
 #contenitorescorre2 {
 
-    width:95vw;
+    width:100vw;
     height:300px;
-    background:#858784;
+    background:white;
     position: absolute;
-    top: 700px;
-    left: 5vw;
+    top: 100vh;
+    
 }
 
 
