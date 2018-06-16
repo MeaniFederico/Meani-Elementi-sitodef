@@ -1,0 +1,435 @@
+body {
+
+    font-size: 11px;
+    font-family: Arial,Helvetica,sans-serif;
+    overflow-x: hidden;
+}
+
+#barralato{
+    background-color: white;
+    width: 40px;
+    height: 100vh;
+}
+
+p{ 
+    font-style: italic;
+    margin-right: 8%;
+    margin-top: 10%;
+    text-align: right;
+    color: white;
+    font-size: 20px;
+
+}
+
+h2{ 
+    margin-right: 7%;
+    margin-top: -2%;
+    text-align: right;
+    color: white;
+    font-size: 30px;
+
+}
+
+#mamma{
+    float: left;
+    font-style: italic;
+    width: 30%;
+    left: 95%;
+    margin-top: 0px;
+    text-align: right;
+    color: white;
+    font-size: 2vw;
+}
+
+#nome {
+    float: left;
+    height: 100%;
+    width: 70%;
+}
+
+
+#fm{
+    margin: 0px;
+    text-align: left;
+    color: white;
+    font-size: 130px;
+}
+
+#contenitoreintro{
+    height: 85%;
+    margin-left: 30vw;
+    margin-right: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    overflow: scroll;
+
+}
+
+#intro{
+    font-family: Georgia, serif;
+    font-style: normal;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+#barra {
+    width:100vw;
+    height:40px;
+    background:white;
+    position: fixed;
+    margin-top: 0px;
+    left: 50vw;
+    transform: translate(-50%, 0%);
+
+    
+}
+
+#home {
+    text-align: center;
+    width:10vw;
+    height:20px;
+    border-bottom: 1px solid red;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.apertohome{
+    transition: 1s;
+    width: 10vw;
+    height: 30vW;
+    background-color: white;
+    border: 1px solid red;
+    position: absolute;
+    left: 25%;
+    top: 75%;
+    transform: translate(-50%, 0%);
+
+}
+
+.piattohome{
+    transition: 1s;
+    width: 10vw;
+    height: 0vW;
+    background-color: red;
+    position: absolute;
+    left: 25%;
+    top: 75%;
+    transform: translate(-50%, 0%);
+
+}
+
+
+
+#photo {
+    text-align: center;
+    width:10vw;
+    height:20px;
+    border-bottom: 1px solid red;
+    position: absolute;
+    left: 50%;
+    top: 50%;  
+    transform: translate(-50%, -50%);    
+}
+
+.apertophoto{
+    transition: 1s;
+    width: 10vw;
+    height: 30vW;
+    background-color: white;
+    border: 1px solid red;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, 0%);
+
+}
+
+.piattophoto{
+    transition: 1s;
+    width: 10vw;
+    height: 0vW;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, 0%);
+
+}
+
+#contact {
+    text-align: center;
+    width:10vw;
+    height:20px;
+    border-bottom: 1px solid red;
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+.apertocontact{
+    transition: 1s;
+    width: 10vw;
+    height: 30vW;
+    background-color: white;
+    border: 1px solid red;
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    transform: translate(-50%, 0%);
+
+}
+
+.piattocontact{
+    transition: 1s;
+    width: 10vw;
+    height: 0vW;
+    background-color: red;
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    transform: translate(-50%, 0%);
+
+}
+
+
+
+
+
+
+
+#instagram {
+
+   width: 19px; 
+    height: 19px; 
+    position: fixed;
+    top: 50%;
+    left: 2.5vw;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+
+
+#contenitorescorre {
+
+	width:95vw;
+	height:300px;
+	background: #b6c7d1;
+	position: absolute;
+	top: 5vh;
+	left: 5vw;
+}
+
+#contenitorefoto {
+
+    width:95vw;
+    height:700px;
+    background:blue;
+    position: absolute;
+    top:1000px;
+    left: 5vw;
+}
+
+   #destra {
+
+    color: #858784;
+    cursor: pointer;
+    width:50px;
+    height:50px;
+    background:white;
+    position: absolute;
+    top:50%;
+    left: 100%;
+    transform: translate(-100%, -50%); 
+    }
+
+    #sinistra {
+
+    color: #858784;
+    cursor: pointer;
+    width:50px;
+    height:50px;
+    background:white;
+    position: absolute;
+    top:50%;
+    left: 0%;
+    transform: translate(0%, -50%); 
+    }
+
+    .centriamo{
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px
+    }
+
+    #interessi{
+    margin-top: -50%; 
+    text-align: left;
+
+    }
+  
+
+    .cornice{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden    
+    }
+
+    .foto{
+        width: 1400px;
+        height: 1052px;
+
+    }
+
+
+
+    .sivede{
+
+        width: 1400px;
+        height: 1052px;
+
+    }
+
+    .nonsivede{
+
+        width: 0vw;
+        height: 0vw;
+    }
+
+    #david{
+        margin-top: -12%;
+    }
+
+    #ktm{
+        margin-top: -20%;
+    }
+
+    #camping{
+        margin-top: -20%;
+    }
+   
+
+#contenitorecit {
+
+    width:95vw;
+    height:700px;
+    background:blue;
+    position: absolute;
+    top:1700px;
+    left: 5vw;
+}
+
+
+
+#sfondofoto {
+
+    width:95vw;
+    height:100vh;
+    background:grey;
+    position: fixed;
+    
+    left: 5vw;
+    
+
+    
+}
+#fotosfondo {
+
+    width:95vw;
+    height:144vw;
+    position: fixed;
+    left: 5%;
+    top: 40%;
+    transform: translate(0%, -50%);
+
+    
+}
+
+#disegno {
+
+    width:150px;
+    height:225px;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+
+#immagine {
+   
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+
+#cit {
+   
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+#nonnatina{
+    margin-top: 8%; 
+    float: left;
+    transform: rotate(-90deg);
+
+   
+}
+
+#contenitorescorre2 {
+
+    width:95vw;
+    height:300px;
+    background:#858784;
+    position: absolute;
+    top: 700px;
+    left: 5vw;
+}
+
+
+	
+    
+
+
+
+
+
+@keyframes roto {
+
+     0% {transform: translate(-50%, -50%)rotate(90deg);}
+
+
+
+     100% {transform: translate(-50%, -50%)rotate(450deg);}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
