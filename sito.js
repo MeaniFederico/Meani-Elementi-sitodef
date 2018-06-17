@@ -132,6 +132,8 @@ function scendehome() {
 
    $("#sottohome").removeClass("piattohome");
    $("#sottohome").addClass("apertohome");
+   $("#home1").removeClass("invisibile");
+   $("#home1").addClass("visibile");
 }
 
 
@@ -139,6 +141,8 @@ function salehome() {
 
    $("#sottohome").removeClass("apertohome");
    $("#sottohome").addClass("piattohome");
+   $("#home1").removeClass("visibile");
+   $("#home1").addClass("invisibile");
 }
 
 
@@ -149,24 +153,15 @@ function tendinahome() {
 	if($("#sottohome").hasClass("piattohome")) {
 		scendehome();
 	}
-}
-
-$("#home").on("mouseover", tendinahome);
-
-
-
-
-
-function chiusuratendinahome() { 
-
-	
-	if($("#sottohome").hasClass("apertohome")) {
+	else if($("#sottohome").hasClass("apertohome")) {
      
 		salehome();
 	}
 }
 
-$("#sottohome").on("mouseout", chiusuratendinahome);
+$("#home").on("mouseover", tendinahome);
+
+
 
 
 
@@ -235,12 +230,16 @@ function scendecontact() {
 
    $("#sottocontact").removeClass("piattocontact");
    $("#sottocontact").addClass("apertocontact");
+   $("#contact1").removeClass("invisibile");
+   $("#contact1").addClass("visibile");
 }
 
 function salecontact() {
 
    $("#sottocontact").removeClass("apertocontact");
    $("#sottocontact").addClass("piattocontact");
+   $("#contact1").removeClass("visibile");
+   $("#contact1").addClass("invisibile");
 }
 
 
@@ -250,17 +249,7 @@ function tendinacontact() {
 	if($("#sottocontact").hasClass("piattocontact")) {
 		scendecontact();
 	}
-	
-	
-	
-}
-
-$("#contact").on("mouseover", tendinacontact);
-
-
-function chiusuratendinacontact() { 
-
-	if($("#sottocontact").hasClass("apertocontact")) {
+	else if($("#sottocontact").hasClass("apertocontact")) {
      
 		salecontact();
 	}
@@ -268,7 +257,9 @@ function chiusuratendinacontact() {
 	
 }
 
-$("#sottocontact").on("mouseout", chiusuratendinacontact);
+$("#contact").on("mouseover", tendinacontact);
+
+
 
 
 

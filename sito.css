@@ -138,10 +138,27 @@ h2{
     height: 85%;
     margin-left: 31vw;
     margin-right: 3vw;
-    margin-top: 3vw;
+    margin-top: 300px;
     margin-bottom: 3vw;
     overflow: scroll;
 
+
+}
+#presentazione{
+    color: grey;
+    position: absolute;
+    right: 71vw;
+    top: 250px;
+    
+}
+
+#barrapresentazione{
+    position: absolute;
+    width: 65vw;
+    height: 1px;
+    top: 265px;
+    left: 31vw;
+    background-color: grey;
 }
 
 #intro{
@@ -154,6 +171,13 @@ h2{
     text-align: left;
     color: grey;
     font-size: 14px;
+}
+
+#nonnatina{
+    top:450px; 
+    right: 71vw;
+    float: left;
+    position: absolute;
 }
 
 #barra {
@@ -183,11 +207,22 @@ h2{
     font-size: 12px    
     }
 
+#home1{
+    position: absolute;
+    width: 10vw;
+    height: 5vh;
+    
+    left:50%;
+    top:0;
+    transform: translate(-50%, 0%);
+
+}    
+
 .apertohome{
     
     transition: 0.5s;
     width: 10vw;
-    height: 30vh;
+    height: 5vh;
     background-color: white;
     border: 1px solid #2789ff;
     position: absolute;
@@ -342,10 +377,21 @@ h2{
     font-size: 12px    
     }
 
+#contact1{
+    position: absolute;
+    width: 10vw;
+    height: 5vh;
+    
+    left:50%;
+    top:0;
+    transform: translate(-50%, 0%);
+
+}        
+
 .apertocontact{
     transition: 0.5s;
     width: 10vw;
-    height: 30vh;
+    height: 5vh;
     background-color: white;
     border: 1px solid #2789ff;
     position: absolute;
@@ -390,6 +436,8 @@ h2{
     
 }
 
+
+
    #destra {
 
     color: #858784;
@@ -398,9 +446,12 @@ h2{
     height:50px;
     background:white;
     position: absolute;
-    top:50%;
-    left: 100%;
-    transform: translate(-100%, -50%); 
+    top:1190;
+    right: 10vw;
+    border: 1px solid grey;
+    border-radius: 3px;
+    
+     
     }
 
     #sinistra {
@@ -411,9 +462,11 @@ h2{
     height:50px;
     background:white;
     position: absolute;
-    top:50%;
-    left: 0%;
-    transform: translate(0%, -50%); 
+    top:1190px;
+    left: 10vw;
+    border: 1px solid grey;
+    border-radius: 3px;
+     
     }
 
     .centriamo{
@@ -428,39 +481,44 @@ h2{
     font-size: 55px    
     }
 
-    #interessi{
-    margin-top: -50%; 
-    text-align: left;
+    
 
-    }
   
 
     .cornice{
 
-    width: 100%;
-    height: 100%;
-    overflow: hidden    
+    position: absolute;
+    top: 1200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    height: 580px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    overflow: hidden;    
     }
 
     .foto{
-        width: 1400px;
-        height: 1052px;
+        width: 1200px;
+        height: 901px;
 
     }
 
 
 
     .sivede{
-        transition: 1s;
-        opacity: 1;
-        width: 1400px;
-        height: 1052px;
+        position: absolute;
+        top: 70%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width: 1100px;
+        height: 825px;
 
     }
 
     .nonsivede{
-        transition: 1s;
-        opacity: 0;
+        
+        
         width: 0px;
         height: 0px;
     }
@@ -478,21 +536,39 @@ h2{
     }
 
     #interessi{
-        color: white;
+        color: grey;
         position: absolute;
-        left: 5vw
+        top: 870px;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        height: 20px;
+        width: 400px;
+        background-color: white
+    }
+
+    #barrainteressi{
+        width: 90vw;
+        height: 1px;
+        background-color: grey;
+        position: absolute;
+        top: 850px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #barracontatti{
+        width: 90vw;
+        height: 1px;
+        background-color: grey;
+        position: absolute;
+        top: 2340px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
    
 
-#contenitorecit {
 
-    width:100vw;
-    height:700px;
-    background:blue;
-    position: absolute;
-    top:1700px;
-    
-}
 
 
 
@@ -532,25 +608,80 @@ h2{
     height: 100%;
 }
 
-#nonnatina{
-    bottom:8vh; 
-    right: 71vw;
-    float: left;
-    position: absolute;
 
-
-   
-}
 
 #contenitorescorre2 {
 
     width:100vw;
-    height:300px;
+    height:2000px;
     background:white;
     position: absolute;
     top: 100vh;
     
 }
+
+#contenitorefine {
+
+    width:100vw;
+    height:100px;
+    
+    position: absolute;
+    top:3200px;
+    
+}
+
+#contatti{
+    right: 71vh;
+    top: 2350px;
+    color: grey;
+    position: absolute;
+    right: 71vw;
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    
+    
+}
+
+#contenitorecontatti{
+    position: absolute;
+    top:2450px;
+    left:30vw;
+    width: 65vw;
+    height: 300px;
+
+}
+
+.contatto{
+    color: grey;
+    text-align: left;
+}
+
+#papa{
+    height: 50px;
+    bottom: 200px; 
+    right: 71vw;
+    float: left;
+    position: absolute;
+
+}
+
+
+#chiuso{
+    position: absolute;
+    bottom: 60px;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    text-align: center;
+    width: 90vw;
+    font-size: 14px;
+    color: white;
+
+}
+
+
+
 
 
 	
