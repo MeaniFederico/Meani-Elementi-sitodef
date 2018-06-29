@@ -1,3 +1,138 @@
+.loader {
+
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+     position: fixed;
+     overflow: hidden;
+     z-index: 100;
+     background-color: white;
+     opacity: 0.8;
+}
+
+
+.azzero {
+
+    background-color: transparent;
+    width: 0vw;
+    height: 0vh;
+    position: fixed;
+    overflow: hidden;
+
+}
+
+#giro1 {
+ 
+    width: 100px;
+    height: 100px;
+    
+    
+
+    
+}
+#giro2 {
+   
+    width: 80px;
+    height: 80px;
+   
+    
+
+    
+}
+
+#giro3 {
+   
+    width: 60px;
+    height: 60px;
+   
+    
+
+    
+}
+
+#giro4 {
+ 
+    width: 40px;
+    height: 40px;
+   
+
+    
+}
+.giro{
+    border: 5px solid transparent;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+    position: absolute;
+    border-radius: 50%;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: rotazione;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+
+}
+
+#palla{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: darkturquoise;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    animation-timing-function: ease-in-out;
+
+}
+
+
+@keyframes rotazione {
+
+     0% {transform: translate(-50%, -50%)rotate(0deg);}
+
+
+
+     100% {transform: translate(-50%, -50%)rotate(180deg);}
+
+}
+
+
+@keyframes blink {
+
+     0% {transform: translate(-50%, -50%)scale(1);}
+
+
+
+     50% {transform: translate(-50%, -50%)scale(0.5);}
+
+
+
+     100% {transform: translate(-50%, -50%)scale(1);}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
 
     font-size: 11px;

@@ -1,3 +1,15 @@
+$(window).on('load', scompare) ;
+
+function scompare() {
+
+   $("#spazio").removeClass("loader");
+   $("#spazio").addClass("azzero");
+}
+
+
+
+
+
 function primoclick() {
 
    $("#sci").removeClass("sivede");
